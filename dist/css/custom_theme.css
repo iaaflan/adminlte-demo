@@ -3,6 +3,7 @@
     --white: #FFFFFF;
     --red: #E32823;
     --tooltip: #D8B4A0;
+    --green: #67E0BA;
 
     /* Navigation Menu Colors */
     --navigation-menu-background: #FFFFFF;
@@ -21,19 +22,19 @@
     --wide-card-background-color: #ECF0F3;
     --wide-card-devices-offline-color: #E32823;
     --wide-card-devices-online-color: #67E0BA;
-    --wide-card-shadow-dark: 18px 18px 30px #D1D9E6;
-    --wide-card-shadow-light: -18 -18 30 #FFFFFF;
+    --wide-card-shadow-dark: #D1D9E6;
+    --wide-card-shadow-light: #FFFFFF;
 
     /* Red Bar Cards */
     --card-red-bar-color: #E32823;
     --card-background-color: #ECF0F3;
-    --card-shadow-dark: 18px 18px 30px #D1D9E6;
-    --card-shadow-light: -18px -18px 30px #FFFFFF;
+    --card-shadow-dark: #D1D9E6;
+    --card-shadow-light: #FFFFFF;
 
     /* Plain Cards */
     --plain-card-background-color: #ECF0F3;
-    --plain-card-shadow-dark: 18px 18px 30px #D1D9E6;
-    --plain-card-shadow-light: -18px -18px 30px #FFFFFF;
+    --plain-card-shadow-dark: #D1D9E6;
+    --plain-card-shadow-light: #FFFFFF;
 
     /* Border radius */
     --border-radius: 9px;
@@ -51,6 +52,7 @@
 
 body {
     font-family: 'Nunito', sans-serif;
+    min-height: 100vh !important;
 }
 
 .bg {
@@ -75,10 +77,53 @@ body {
     text-align: center;
 }
 
+.ad-info {
+    margin: 5%;
+}
+
 .image {
     max-width: 120px !important;
     padding: 5%;
 }
+
+.image-broadcast {
+    display: block !important;
+    width: max(120px, 10vw);
+    max-width: 200px;
+    height: auto !important;
+}
+
+.card {
+    padding: 5%;
+    border-radius: var(--border-radius);
+    margin: 3%;
+    background: var(--white);
+    box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
+}
+
+.custom-btn-red {
+    background: var(--red) !important;
+    text-decoration: none !important;
+    color: var(--white);
+    margin: 1%;
+}
+
+.custom-btn-green {
+    background: var(--green) !important;
+    text-decoration: none !important;
+    color: var(--white);
+    margin: 1%;
+}
+
+.text-decor {
+    color: var(--white);
+    text-decoration: none !important;
+}
+
+.text-decor:hover {
+    color: var(--hover-color) !important;
+}
+
 
 
 
@@ -92,16 +137,37 @@ body {
     --wide-card-shadow-light: -18px -18px 30px #FFFFFF !important; */
 
 .rectangle {
+    margin: 4%;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
-    margin: 4%;
     width: max(300px, auto) !important;
     height: max(auto, auto) !important;
     color: var(--text-color) !important;
     background: var(--wide-card-background-color) !important;
     box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
+}
+
+.square {
+    margin: 4%;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    width: max(110px, 8vw) !important;
+    height: max(110px, 8vw) !important;
+    color: var(--text-color) !important;
+    background: var(--wide-card-background-color) !important;
+    box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
+}
+
+.redbar {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background: var(--card-red-bar-color) !important;
+    width: 100%;
+    height: max(8px, 1.5vh);
 }
 
 /* 300px */
@@ -150,8 +216,10 @@ body {
 }
 
 .title {
+    font-size: 2em;
     font-family: 'Nunito', sans-serif;
 }
+
 
 .plain-sqaure {
     border-top-left-radius: var(--border-radius);
@@ -160,8 +228,8 @@ body {
     border-bottom-right-radius: var(--border-radius);
     margin: max(25px, 3%);
     padding: max(25px, 3%);
-    width: max(120px, 8vw) !important;
-    height: max(120px, 8vw) !important;
+    width: max(110px, 8vw) !important;
+    height: max(110px, 8vw) !important;
     color: var(--text-color) !important;
     background: var(--wide-card-background-color) !important;
     box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
@@ -183,4 +251,9 @@ body {
 
 .scale {
     font-size: max(20px, 2.0vw);
+}
+
+.padding {
+    margin-top: 30px;
+    /* padding: max(5px, 5%) !important; */
 }

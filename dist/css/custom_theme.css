@@ -256,10 +256,11 @@ body {
 }
 
 .scale {
-    font-size: max(20px, 2.0vw);
+    font-size: max(20px, 1.0em);
+
 }
 
 .padding {
-    margin-top: 25px;
+    margin-top: 20px;
     /* padding: max(5px, 5%) !important; */
 }

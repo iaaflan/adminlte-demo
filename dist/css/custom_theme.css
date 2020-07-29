@@ -1,6 +1,7 @@
 :root {
     /* Basic colors */
     --white: #FFFFFF;
+    --red: #E32823;
     --tooltip: #D8B4A0;
 
     /* Navigation Menu Colors */
@@ -75,6 +76,7 @@ body {
 }
 
 .image {
+    max-width: 120px !important;
     padding: 5%;
 }
 
@@ -149,4 +151,36 @@ body {
 
 .title {
     font-family: 'Nunito', sans-serif;
+}
+
+.plain-sqaure {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    margin: max(25px, 3%);
+    padding: max(25px, 3%);
+    width: max(120px, 8vw) !important;
+    height: max(120px, 8vw) !important;
+    color: var(--text-color) !important;
+    background: var(--wide-card-background-color) !important;
+    box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
+}
+
+.active {
+    color: var(--red) !important;
+}
+
+.text-center {
+    margin: 0 auto;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.scale {
+    font-size: max(20px, 2.0vw);
 }

@@ -1,6 +1,7 @@
 :root {
     /* Basic colors */
     --white: #FFFFFF;
+    --tooltip: #D8B4A0;
 
     /* Navigation Menu Colors */
     --navigation-menu-background: #FFFFFF;
@@ -38,11 +39,18 @@
 
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
 /* 
 .white {
     background: var(--white) !important;
     color: var(--white) !important;
 } */
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
 
 .bg {
     background: var(--background-color) !important;
@@ -66,6 +74,10 @@
     text-align: center;
 }
 
+.image {
+    padding: 5%;
+}
+
 
 
 
@@ -82,15 +94,15 @@
     border-top-right-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
-
-    margin-top: 10%;
-    width: max(320px, 12vw) !important;
-    height: max(160px, 6vw) !important;
+    margin: 4%;
+    width: max(300px, auto) !important;
+    height: max(auto, auto) !important;
     color: var(--text-color) !important;
     background: var(--wide-card-background-color) !important;
     box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
 }
 
+/* 300px */
 .widebar {
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
@@ -105,4 +117,36 @@
 
 .offline {
     color: var(--wide-card-devices-offline-color) !important;
+}
+
+.horizontal-center {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.vertical-center {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.dead-center {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.inline {
+    margin: 3%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    display: inline-block !important;
+}
+
+.tool {
+    display: inline-block !important;
+    color: var(--tooltip) !important;
+}
+
+.title {
+    font-family: 'Nunito', sans-serif;
 }

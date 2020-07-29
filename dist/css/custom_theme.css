@@ -94,9 +94,10 @@ body {
 }
 
 .card {
-    padding: 5%;
+    max-height: 250px;
+    padding: 2%;
     border-radius: var(--border-radius);
-    margin: 3%;
+    margin: 1%;
     background: var(--white);
     box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
 }
@@ -150,7 +151,7 @@ body {
 }
 
 .square {
-    margin: 4%;
+    margin: 10%;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
@@ -160,6 +161,11 @@ body {
     color: var(--text-color) !important;
     background: var(--wide-card-background-color) !important;
     box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
+}
+
+.small-pad {
+    margin: 0.5%;
+    padding: 5px;
 }
 
 .redbar {
@@ -254,6 +260,6 @@ body {
 }
 
 .padding {
-    margin-top: 30px;
+    margin-top: 25px;
     /* padding: max(5px, 5%) !important; */
 }

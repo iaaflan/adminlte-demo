@@ -1,0 +1,108 @@
+:root {
+    /* Basic colors */
+    --white: #FFFFFF;
+
+    /* Navigation Menu Colors */
+    --navigation-menu-background: #FFFFFF;
+    --navigation-menu-text-icon: #747170;
+    --navigation-menu-hover-select: #EFEEEE;
+    --navigation-menu-select-menu: #E32823;
+
+    /* Dashboard Menu Colors */
+    --background-color: #ECF0F3;
+    --text-color: #747170;
+    --icon-color: #A4A4A4;
+    --hover-color: #D1CFCE;
+
+    /* Wide Cards */
+    --wide-card-bar-color: #D8B4A0;
+    --wide-card-background-color: #ECF0F3;
+    --wide-card-devices-offline-color: #E32823;
+    --wide-card-devices-online-color: #67E0BA;
+    --wide-card-shadow-dark: 18px 18px 30px #D1D9E6;
+    --wide-card-shadow-light: -18 -18 30 #FFFFFF;
+
+    /* Red Bar Cards */
+    --card-red-bar-color: #E32823;
+    --card-background-color: #ECF0F3;
+    --card-shadow-dark: 18px 18px 30px #D1D9E6;
+    --card-shadow-light: -18px -18px 30px #FFFFFF;
+
+    /* Plain Cards */
+    --plain-card-background-color: #ECF0F3;
+    --plain-card-shadow-dark: 18px 18px 30px #D1D9E6;
+    --plain-card-shadow-light: -18px -18px 30px #FFFFFF;
+
+    /* Border radius */
+    --border-radius: 9px;
+
+}
+
+/* 
+.white {
+    background: var(--white) !important;
+    color: var(--white) !important;
+} */
+
+.bg {
+    background: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+.title {
+    text-align: center !important;
+}
+
+.sub-title {
+    text-align: center !important;
+}
+
+
+.center {
+    margin: 0 auto !important;
+}
+
+.info {
+    text-align: center;
+}
+
+
+
+
+
+/* --wide-card-bar-color: #D8B4A0 !important;
+    --wide-card-background-color: #ECF0F3 !important;
+    --wide-card-devices-offline-color: #E32823 !important;
+    --wide-card-devices-online-color: #67E0BA !important;
+    --wide-card-shadow-dark: 18px 18px 30px #ECF0F3 !important;
+    --wide-card-shadow-light: -18px -18px 30px #FFFFFF !important; */
+
+.rectangle {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+
+    margin-top: 10%;
+    width: max(320px, 12vw) !important;
+    height: max(160px, 6vw) !important;
+    color: var(--text-color) !important;
+    background: var(--wide-card-background-color) !important;
+    box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
+}
+
+.widebar {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background: var(--wide-card-bar-color) !important;
+    width: 100%;
+    height: max(8px, 1.5vh);
+}
+
+.online {
+    color: var(--wide-card-devices-online-color) !important
+}
+
+.offline {
+    color: var(--wide-card-devices-offline-color) !important;
+}

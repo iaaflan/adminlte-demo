@@ -261,6 +261,6 @@ body {
 }
 
 .padding {
-    margin-top: max(20px, 3vw);
+    margin-top: max(10px, 1.5vw);
     /* padding: max(5px, 5%) !important; */
 }

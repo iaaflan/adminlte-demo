@@ -75,6 +75,7 @@ body {
     border-bottom-right-radius: var(--border-radius);
     width: max(300px, auto) !important;
     height: max(auto, auto) !important;
+    max-height: 300px;
     color: var(--text-color) !important;
     background: var(--wide-card-background-color) !important;
     box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
 :root {
     /* Basic colors */
     --white: #FFFFFF;
@@ -36,27 +39,30 @@
     --plain-card-shadow-dark: #D1D9E6;
     --plain-card-shadow-light: #FFFFFF;
 
-    /* Border radius */
+    /* Variables */
+    --nunito: 'Nunito', sans-serif;
     --border-radius: 9px;
+    --min-heigh: 100vh;
 
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 /* 
-.white {
-    background: var(--white) !important;
-    color: var(--white) !important;
-} */
+ */
 
 body {
-    font-family: 'Nunito', sans-serif;
-    min-height: 100vh !important;
+    font-family: var(--nunito);
+    min-height: var(--min-heigh) !important;
 }
+
 
 .bg {
     background: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+.nav-bg {
+    background: var(--white) !important;
     color: var(--text-color) !important;
 }
 

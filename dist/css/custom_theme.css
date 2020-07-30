@@ -80,14 +80,6 @@ body {
     box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
 }
 
-/* Wide Card titles */
-.title {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 10px;
-    text-align: center !important;
-}
-
 
 /* Wide Card Bar */
 .widebar {
@@ -96,6 +88,15 @@ body {
     background: var(--wide-card-bar-color) !important;
     width: 100%;
     height: max(8px, 1.5vh);
+}
+
+
+/* Wide Card titles */
+.title {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    text-align: center !important;
 }
 
 
@@ -116,9 +117,9 @@ body {
 }
 
 .image {
-    max-width: min(90px, 20vw) !important;
+    max-width: min(80px, 20vw) !important;
     margin-top: min(30px, 20%);
-    padding: max(5px, 1%);
+    padding: max(10px, 1%);
 }
 
 .image-broadcast {
@@ -291,4 +292,9 @@ body {
 
 .padding-card {
     padding-bottom: max(40px, 0.5vw);
+}
+
+.padding-small {
+    padding-left: max(10px, 0.5vw);
+    padding-bottom: max(10px, 0.5vw);
 }

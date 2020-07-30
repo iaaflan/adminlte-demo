@@ -135,7 +135,7 @@ body {
     padding: 2%;
     border-radius: var(--border-radius);
     margin: 1%;
-    background: var(--white);
+    background: var(--card-background-color);
     box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
 }
 

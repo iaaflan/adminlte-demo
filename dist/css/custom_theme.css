@@ -47,49 +47,78 @@
 }
 
 
-/* 
- */
-
+/* Body in generic */
 body {
     font-family: var(--nunito);
     min-height: var(--min-heigh) !important;
 }
 
 
+/* page background */
 .bg {
     background: var(--background-color) !important;
     color: var(--text-color) !important;
 }
 
+/* navigation background */
 .nav-bg {
     background: var(--white) !important;
     color: var(--text-color) !important;
 }
 
+/* Wide Card Background */
+.rectangle {
+    margin: 4%;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    width: max(300px, auto) !important;
+    height: max(auto, auto) !important;
+    color: var(--text-color) !important;
+    background: var(--wide-card-background-color) !important;
+    box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
+}
+
+/* Wide Card titles */
 .title {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
     text-align: center !important;
 }
 
+
+/* Wide Card Bar */
+.widebar {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background: var(--wide-card-bar-color) !important;
+    width: 100%;
+    height: max(8px, 1.5vh);
+}
+
+
+/* Wide Card sub-titles */
 .sub-title {
     text-align: center !important;
 }
 
-
-.center {
-    margin: 0 auto !important;
-}
-
+/* Wide Card info */
 .info {
     text-align: center;
 }
+
+
 
 .ad-info {
     margin: 5%;
 }
 
 .image {
-    max-width: 120px !important;
-    padding: 5%;
+    max-width: min(90px, 20vw) !important;
+    margin-top: min(30px, 20%);
+    padding: max(5px, 1%);
 }
 
 .image-broadcast {
@@ -143,18 +172,7 @@ body {
     --wide-card-shadow-dark: 18px 18px 30px #ECF0F3 !important;
     --wide-card-shadow-light: -18px -18px 30px #FFFFFF !important; */
 
-.rectangle {
-    margin: 4%;
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-    width: max(300px, auto) !important;
-    height: max(auto, auto) !important;
-    color: var(--text-color) !important;
-    background: var(--wide-card-background-color) !important;
-    box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
-}
+
 
 .square {
     margin: 10%;
@@ -182,14 +200,7 @@ body {
     height: max(8px, 1.5vh);
 }
 
-/* 300px */
-.widebar {
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
-    background: var(--wide-card-bar-color) !important;
-    width: 100%;
-    height: max(8px, 1.5vh);
-}
+
 
 .online {
     color: var(--wide-card-devices-online-color) !important
@@ -197,6 +208,11 @@ body {
 
 .offline {
     color: var(--wide-card-devices-offline-color) !important;
+}
+
+/* Alignments */
+.center {
+    margin: 0 auto !important;
 }
 
 .horizontal-center {
@@ -208,6 +224,8 @@ body {
     display: flex !important;
     align-items: center !important;
 }
+
+/* !-- Alignments */
 
 .dead-center {
     display: flex !important;
@@ -269,4 +287,8 @@ body {
 .padding {
     margin-top: max(10px, 1.5vw);
     /* padding: max(5px, 5%) !important; */
+}
+
+.padding-card {
+    padding-bottom: max(40px, 0.5vw);
 }

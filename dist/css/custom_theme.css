@@ -244,6 +244,7 @@ body {
 
 .tool {
     display: inline-block !important;
+    font-size: 20px;
     color: var(--tooltip) !important;
 }
 

@@ -404,3 +404,10 @@ body {
 .golden {
     color: var(--tooltip);
 }
+
+.robi-new-margin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1%;
+}

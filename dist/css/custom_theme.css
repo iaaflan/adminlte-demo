@@ -78,9 +78,9 @@ body {
     border-top-right-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
-    width: max(300px, auto) !important;
+    width: max(350px, auto) !important;
     height: max(auto, auto) !important;
-    max-height: 250px;
+    max-height: 200px;
     color: var(--text-color) !important;
     background: var(--wide-card-background-color) !important;
     box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
@@ -102,7 +102,6 @@ body {
     width: 100%;
     height: max(8px, 1.5vh);
 }
-
 
 /* Wide Card titles */
 .title {

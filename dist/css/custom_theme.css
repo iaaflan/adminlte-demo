@@ -443,7 +443,7 @@ body {
 }
 
 .rss-feed-md {
-    width: 500px !important;
+    width: 550px !important;
     margin: 5% !important;
     border-radius: var(--border-radius) !important;
     box-shadow: 6px 6px 10px #D1D9E6, -6px -6px 30px #FFFFFF !important;

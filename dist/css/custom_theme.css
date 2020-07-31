@@ -52,6 +52,8 @@
 
 }
 
+
+/* Dashboard */
 /* Body in generic */
 body {
     font-family: var(--nunito);
@@ -236,6 +238,7 @@ body {
     text-decoration: none !important;
     color: var(--white) !important;
     margin: 1% !important;
+    padding: 2% !important;
     transition-property: background !important;
     transition-duration: 0.3s !important;
     transition-timing-function: ease-in-out !important;
@@ -244,6 +247,7 @@ body {
 .custom-btn-green {
     background: var(--green) !important;
     text-decoration: none !important;
+    padding: 2% !important;
     color: var(--white);
     margin: 1%;
 }
@@ -342,3 +346,61 @@ body {
 }
 
 /* !----- Generics */
+
+/* !----- /* Dashboard */
+
+/* Other Products */
+
+/* Card Design */
+
+/* Text and Image Guideline */
+/* IF YOU DON'T FOLLOW THE GUIDELINE, THE CARD WILL BREAK */
+/* MUSTBE Character: 200 Words: 37 Sentance: 3 Paragraph 1 Space 37 */
+/* Image must have transparent background! and the image must be in SVG format and the ratio must be 1:1 */
+
+
+.card-view {
+    height: max(440px, auto);
+    border-radius: var(--border-radius);
+    margin: 4%;
+    background: var(--card-background-color);
+    box-shadow: 6px 6px 10px #D1D9E6, -6px -6px 30px #FFFFFF !important;
+    transition-property: background, box-shadow, scale;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.6s;
+}
+
+.card-view:hover {
+    cursor: pointer;
+    background: var(--white);
+    box-shadow: 20px 20px 30px #D1D9E6, -20px -20px 30px #FFFFFF !important;
+
+}
+
+.card-img-top {
+    padding-top: 55px;
+    padding-bottom: 20px;
+    height: 200px;
+    width: 100%;
+    background: var(--white);
+}
+
+.rounded-top {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.card-body {
+    padding: 5%;
+    color: var(--text-color) !important;
+}
+
+.card-title {
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.golden {
+    color: var(--tooltip);
+}

@@ -565,3 +565,8 @@ body {
 .medium-text {
     font-size: 1.2em !important;
 }
+
+.margin-left-right {
+    margin-left: 10px;
+    margin-right: 10px;
+}

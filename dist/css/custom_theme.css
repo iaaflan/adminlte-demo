@@ -228,6 +228,7 @@ body {
 
 .card {
     max-height: 250px;
+    min-width: 200px;
     padding: 2%;
     border-radius: var(--border-radius);
     margin: 1%;
@@ -242,8 +243,17 @@ body {
     padding: min(20px, 4%) !important;
     border-radius: var(--border-radius);
     margin: 1% !important;
-    background: var(--card-background-color) !important;
+    transform: scale(1);
     box-shadow: 18px 18px 30px #D1D9E6, -18px -18px 30px #FFFFFF !important;
+    transition-property: background-color, box-shadow, transform;
+    transition-duration: var(--animation-duration-long);
+    transition-timing-function: ease-in-out;
+}
+
+.card-accordian:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 30px 30px 30px #D1D9E6, -30px -30px 30px #FFFFFF !important;
 }
 
 .card-accordian-title {
@@ -569,4 +579,18 @@ body {
 .margin-left-right {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.accordion {
+    transform: scale(1.0);
+    border-radius: var(--border-radius);
+    transition-property: all;
+    transition-duration: var(--animation-duration-long);
+    transition-timing-function: ease-in-out;
+}
+
+.accordion:focus,
+.accordion:hover {
+    background: var(--dark-text-icon-color) !important;
+    transform: scale(1.05);
 }
